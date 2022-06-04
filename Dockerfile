@@ -19,7 +19,7 @@ ENV NODE_ENV=developement
 
 RUN npm install
 
-COPY .. /
+COPY . /
 
 FROM base as production
 
@@ -27,4 +27,4 @@ ENV NODE_PATH=./build
 
 RUN npm run build
 
-COPY .. /
+COPY . /

@@ -13,4 +13,4 @@ down:
 	$(MAKE) ACTION="down" execute
 
 execute:
-	docker-compose -f .dev-container/docker-compose.yml $(ACTION)
+	docker-compose $(ACTION)
