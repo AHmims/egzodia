@@ -1,0 +1,22 @@
+version: '3.7'
+
+services:
+  egzodia-app:
+    build:
+      context: ..
+      target: dev
+      dockerfile: .dev-container/Dockerfile
+    volumes:
+      - .:/var/dev/egzodia
+      - /var/dev/egzodia/node_modules/
+    container_name: egzodia-app
+    expose:
+      - '10400'
+    ports:
+      - '10400:10400'
+    command: tail -F keepRunning
+    networks:
+      - egzodia
+networks:
+  egzodia:
+    driver: bridge
