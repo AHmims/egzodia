@@ -4,15 +4,18 @@ services:
   egzodia-app:
     build:
       context: ./
-      target: dev
     volumes:
       - .:/var/dev/egzodia
       - /var/dev/egzodia/node_modules/
     container_name: egzodia-app
     expose:
       - '10400'
+      - '3000'
+      - '3001'
     ports:
       - '10400:10400'
+      - '3000:3000'
+      - '3001:3001'
     command: tail -F keepRunning
     networks:
       - egzodia
