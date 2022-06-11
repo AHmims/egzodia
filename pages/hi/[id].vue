@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const route = useRoute();
 const user = useUserStore();
-const name = route.params.id;
+const userName = route.params.id;
 
 watchEffect(() => {
   user.setNewName(route.params.id as string);
@@ -19,7 +19,7 @@ definePageMeta({
       Hi,
     </h3>
     <div text-xl>
-      {{ name }}!
+      {{ userName }}!
     </div>
 
     <template v-if="user.otherNames.length">
