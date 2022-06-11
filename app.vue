@@ -6,7 +6,7 @@ useHead({
       rel: 'icon', type: 'image/png', href: '/nuxt.png',
     },
   ],
-})
+});
 </script>
 
 <template>

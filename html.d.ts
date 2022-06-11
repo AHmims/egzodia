@@ -10,4 +10,4 @@ declare module '@vue/runtime-core' {
     [key: string]: any
   }
 }
-export {}
+export {};
