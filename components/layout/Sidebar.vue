@@ -4,8 +4,8 @@ import Tab from 'components/layout/partials/Tab.vue';
 </script>
 
 <template>
-  <div class="w-[18rem] bg-coal-H3 h-screen right-border">
-    <div class="w-full flex items-center justify-between p-6 bottom-border">
+  <div class="flex-none w-[18rem] bg-coal-H3 h-screen right-border">
+    <div class="w-full h-[5.625rem] flex items-center justify-between p-6 bottom-border">
       <NuxtLink to="/" class="flex items-center">
         <div class="p-[0.375rem] bg-coal-H2 rounded-3">
           <img src="~/assets/logos/ah.svg" alt="Ali HMIMS logo" class="w-7 h-7 select-none" draggable="false">

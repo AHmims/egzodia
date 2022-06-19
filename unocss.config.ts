@@ -19,6 +19,7 @@ export default defineConfig({
   rules: [
     ['right-border-shadow-effect', { 'box-shadow': 'inset -2px 0 0 0 #000000' }],
     ['bottom-border-shadow-effect', { 'box-shadow': 'inset 0 -2px 0 0 #000000' }],
+    ['wtf-shadow', { 'box-shadow': '0px 2px 4px rgba(0, 0, 0, 0.06), inset 0px -1px 4px rgba(0, 0, 0, 0.14), inset 0px 2px 2px rgba(79, 79, 79, 0.15), inset 0px 4px 6px rgba(255, 255, 255, 0.02)' }],
   ],
   presets: [
     presetUno(),
@@ -50,6 +51,9 @@ export default defineConfig({
         H3: '#121315',
         H4: '#000000',
       },
+    },
+    fontSize: {
+      tiny: '10px',
     },
   },
 });

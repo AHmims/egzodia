@@ -6,7 +6,7 @@ defineProps({
 
 <template>
   <div>
-    <span class="block px-[0.875rem] text-sm text-coal-L2 mb-[0.875rem] select-none">{{ title }}</span>
+    <span class="block px-[14px] text-sm text-coal-L2 mb-[0.875rem] select-none">{{ title }}</span>
     <div class="space-y-[0.125rem]">
       <slot />
     </div>
