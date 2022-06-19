@@ -1,9 +1,12 @@
+<script setup lang="ts">
+import Sidebar from 'components/layout/Sidebar.vue';
+</script>
+
 <template>
-  <main class="py-20 px-10 text-center">
-    <slot />
-    <Footer />
-    <div class="mt-5 mx-auto text-center opacity-25 text-sm">
-      [Default Layout]
+  <main class="bg-coal-H3 h-screen w-screen flex">
+    <Sidebar />
+    <div>
+      <slot />
     </div>
   </main>
 </template>

@@ -1,6 +1,11 @@
+import { resolve } from 'path';
 import { defineNuxtConfig } from 'nuxt';
 
 export default defineNuxtConfig({
+  alias: {
+    components: resolve(__dirname, './components'),
+    resources: resolve(__dirname, './resources'),
+  },
   modules: [
     '@vueuse/nuxt',
     '@unocss/nuxt',
