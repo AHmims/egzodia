@@ -1,11 +1,14 @@
 <script setup lang="ts">
-import Tab from 'components/layout/partials/Tab.vue';
+defineProps({
+  title: String,
+});
 </script>
 
 <template>
-  <div class="space-y-[0.125rem]">
-    <Tab path="/" icon="i-tabler:home" title="Overview" />
-    <Tab path="/blog" icon="i-tabler:book-2" title="Blog" />
-    <Tab path="/projects" icon="i-tabler:folder" title="Projects" />
+  <div>
+    <span class="block px-[0.875rem] text-sm text-coal-L2 mb-[0.875rem] select-none">{{ title }}</span>
+    <div class="space-y-[0.125rem]">
+      <slot />
+    </div>
   </div>
 </template>
